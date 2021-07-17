@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>Firebase Web Login </h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome!!</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCEfQDGQh1X27sojpHwcVJmp3c3U8l8nP0",
+      authDomain: "practical-now-306703.firebaseapp.com",
+      projectId: "practical-now-306703",
+      storageBucket: "practical-now-306703.appspot.com",
+      messagingSenderId: "519435023882",
+      appId: "1:519435023882:web:dcec651221057f2bb751f3"
+	};
+    firebase.initializeApp(config);
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
