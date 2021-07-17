@@ -26,10 +26,11 @@
             <table class="table table-striped" id="ex-table">
                 <thead class="thead-inverse">
                     <tr>
-                        <th>Task Title</th>
-                        <th>Category</th>
-                        <th>Date</th>
-                        <th>Status</th>
+                        <th>Proveedor</th>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                   
                     </tr>
                 </thead>
                 <tbody>
@@ -38,7 +39,7 @@
                         <td id="name2"></td>
                         <td id="name3"></td>
                         <td id="name4"></td>
-                        <td id="name5"></td>
+                  
                     </tr>
                 </tbody>
             </table>
@@ -86,7 +87,6 @@
                     td2= document.getElementById("name2");
                     td3= document.getElementById("name3");
                     td4= document.getElementById("name4");
-                    td5= document.getElementById("name5");
 
             //iniciar con Google
             var loginFacebook = function () {
@@ -164,7 +164,7 @@
                         console.log("  Email: " + profile.email);
                         td4.innerHTML = profile.email.toString();
                         console.log("  Photo URL: " + profile.photoURL);
-                        td5.innerHTML = user_image.src;
+                        
                        
                     });
                 }
